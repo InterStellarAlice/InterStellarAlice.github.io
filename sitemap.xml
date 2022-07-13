@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://example.com/2022/02/22/%E9%87%8F%E5%AD%90%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E4%B8%89%E4%B8%AA%E7%BB%98%E6%99%AF%EF%BC%8C%E8%AF%B8%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%9C%BA%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A1%A8%E8%B1%A1/</loc>
     
     <lastmod>2022-07-13</lastmod>
     
@@ -12,6 +12,15 @@
   
   <url>
     <loc>http://example.com/2022/07/13/hello-world/</loc>
+    
+    <lastmod>2022-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/index.html</loc>
     
     <lastmod>2022-07-13</lastmod>
     
@@ -41,24 +50,6 @@
     <loc>http://example.com/2022/02/04/Travelogue-2022-2-4/</loc>
     
     <lastmod>2022-02-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/02/22/%E9%87%8F%E5%AD%90%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E4%B8%89%E4%B8%AA%E7%BB%98%E6%99%AF%EF%BC%8C%E8%AF%B8%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%9C%BA%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A1%A8%E8%B1%A1/</loc>
-    
-    <lastmod>2022-02-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/02/18/Travelogue-2022-2-18/</loc>
-    
-    <lastmod>2022-02-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
