@@ -2728,3 +2728,10 @@ ul.breadcrumb li:last-child {
     margin-bottom: 10px;
   }
 }
+body {
+  background: url("/images/canvas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
