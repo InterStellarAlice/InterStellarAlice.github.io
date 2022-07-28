@@ -1,3 +1,8 @@
+http://example.com/2022/07/28/3-5/
+http://example.com/2022/07/28/3-4/
+http://example.com/2022/07/28/3-1/
+http://example.com/2022/07/28/3-3/
+http://example.com/2022/07/28/3-2/
 http://example.com/2022/02/22/%E9%87%8F%E5%AD%90%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E4%B8%89%E4%B8%AA%E7%BB%98%E6%99%AF%EF%BC%8C%E8%AF%B8%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%9C%BA%E7%AE%97%E7%AC%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%A1%A8%E8%B1%A1/
 http://example.com/2022/07/13/hello-world/
 http://example.com/tags/index.html
@@ -6,5 +11,5 @@ http://example.com/2022/02/08/Notes-on-Mathematical-Analysis-of-Problems-in-the-
 http://example.com/2022/02/04/Travelogue-2022-2-4/
 http://example.com/
 http://example.com/tags/notes/
-http://example.com/tags/travelogue/
 http://example.com/tags/many-body-physics/
+http://example.com/tags/travelogue/
