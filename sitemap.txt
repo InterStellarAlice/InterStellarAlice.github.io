@@ -1,3 +1,4 @@
+http://example.com/2022/09/24/Notes-on-Vim/
 http://example.com/2022/02/07/An-Approach-To-Academic-Writing/
 http://example.com/2022/02/08/Notes-on-Mathematical-Analysis-of-Problems-in-the-Natural-Sciences/
 http://example.com/2022/02/04/Travelogue-2022-2-4/

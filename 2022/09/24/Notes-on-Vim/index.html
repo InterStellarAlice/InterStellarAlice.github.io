@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#0F77A4">
+<meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#0F77A4">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="查表! 套公式! RTFSC!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notes on Vim">
+<meta property="og:url" content="http://example.com/2022/09/24/Notes-on-Vim/index.html">
+<meta property="og:site_name" content="Inter-Stellar Alice">
+<meta property="og:description" content="查表! 套公式! RTFSC!">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/004.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/005.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/006.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/008.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/009.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/010.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/011.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/012.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/013.png">
+<meta property="og:image" content="http://example.com/2022/09/24/Notes-on-Vim/014.png">
+<meta property="article:published_time" content="2022-09-24T14:46:32.000Z">
+<meta property="article:modified_time" content="2022-09-24T14:48:04.000Z">
+<meta property="article:author" content="姬">
+<meta property="article:tag" content="notes">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/09/24/Notes-on-Vim/004.png">
+
+
+<link rel="canonical" href="http://example.com/2022/09/24/Notes-on-Vim/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/09/24/Notes-on-Vim/","path":"2022/09/24/Notes-on-Vim/","title":"Notes on Vim"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Notes on Vim | Inter-Stellar Alice</title>
+  
+
+
+
+<link rel="dns-prefetch" href="waline-server-rosy.vercel.app">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="Inter-Stellar Alice" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Inter-Stellar Alice</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vim"><span class="nav-number">1.</span> <span class="nav-text">vim</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#start-vim"><span class="nav-number">1.1.</span> <span class="nav-text">Start Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vim-modes"><span class="nav-number">1.2.</span> <span class="nav-text">Vim modes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#create-new-file"><span class="nav-number">1.3.</span> <span class="nav-text">Create new file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vimtutor-summaries"><span class="nav-number">1.4.</span> <span class="nav-text">vimtutor-summaries</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#using-vim-as-ide"><span class="nav-number">1.5.</span> <span class="nav-text">Using Vim As IDE</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="姬"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">姬</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/24/Notes-on-Vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="姬">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Inter-Stellar Alice">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Notes on Vim
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-09-24 22:46:32 / 修改时间：22:48:04" itemprop="dateCreated datePublished" datetime="2022-09-24T22:46:32+08:00">2022-09-24</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2022/09/24/Notes-on-Vim/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2022/09/24/Notes-on-Vim/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+            <div class="post-description">查表! 套公式! RTFSC!</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="vim">vim</h2>
+<p>Useful introductions:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.tutorialspoint.com/vim/vim_introduction.htm">Vim_introduction</a></li>
+<li><a target="_blank" rel="noopener" href="https://vim-adventures.com/">Learning VIM while playing a
+game</a></li>
+<li>鸟哥的 Linux 私房菜: 第十章</li>
+<li>命令行输入 <code>vimtutor</code> 进入编辑器自带教程界面,
+帮助快速熟悉编辑器基本用法.</li>
+</ul>
+<p>Vim 是 <strong>Vi IM</strong>proved 的缩写,
+它是一个免费的开源文本编辑器.</p>
+<p>特点:</p>
+<ul>
+<li>占用内存少;</li>
+<li>程序简单, 编辑速度快;</li>
+<li>可配置性好, 配置文件仅用文本文档存储;</li>
+<li>第三方插件多;</li>
+<li>具有编程能力, 支持超过两百种程序语言高亮.</li>
+</ul>
+<h3 id="start-vim">Start Vim</h3>
+<p>(测试环境: win10+Git Bash)</p>
+<p>打开终端, 输入指令 <code>vim</code> , 打开 Vim 界面:</p>
+<p><img src="/2022/09/24/Notes-on-Vim/004.png" alt="004" style="zoom:67%;"></p>
+<p>输入 <code>Esc</code> <code>:</code> <code>q</code>
+<code>Enter</code> 关闭编辑器界面.</p>
+<h3 id="vim-modes">Vim modes</h3>
+<p>Vim 有几种主要模式: 一般模式, 编辑模式与命令行模式.</p>
+<p>打开编辑器时, 默认为一般模式. 输入 <code>i</code> , <code>o</code>,
+<code>a</code>, <code>R</code> 后转为编辑模式, 或者输入 <code>:</code>,
+<code>/</code>, <code>?</code> 后转为命令行模式, 按 <code>Esc</code>
+返回一般模式.</p>
+<ul>
+<li>一般模式: 可以使用上下左右按键移动光标, 无法编辑文本内容.</li>
+<li>编辑模式: 界面左下方出现 INSERT 或 REPLACE 字样, 可以进行编辑.</li>
+<li>命令行模式: 可以执行查找数据, 读取, 保存, 大量替换字符,
+离开编辑器等操作.</li>
+</ul>
+<h3 id="create-new-file">Create new file</h3>
+<p>命令行执行 <code>Vim</code> 打开编辑器, 输入
+<code>:edit message.txt</code> , 如果文件存在将被打开,
+如果不存在将被新建. 界面左下角显示文件名和相关信息.</p>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/005.png" alt="005">
+<figcaption aria-hidden="true">005</figcaption>
+</figure>
+<p>切换至编辑模式下, 输入文本内容.</p>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/006.png" alt="006">
+<figcaption aria-hidden="true">006</figcaption>
+</figure>
+<p>按 <code>Esc</code> 切换回一般模式, 输入 <code>:w</code> 保存更改.
+输入 <code>:q</code> 退出 Vim(或者 <code>:wq</code> 保存并退出 ).
+此时在当前目录下出现了修改过内容的 <code>message.txt</code> 文件.</p>
+<h3 id="vimtutor-summaries">vimtutor-summaries</h3>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/008.png" alt="summary from vimtutor">
+<figcaption aria-hidden="true">summary from vimtutor</figcaption>
+</figure>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/009.png" alt="009">
+<figcaption aria-hidden="true">009</figcaption>
+</figure>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/010.png" alt="010">
+<figcaption aria-hidden="true">010</figcaption>
+</figure>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/011.png" alt="011">
+<figcaption aria-hidden="true">011</figcaption>
+</figure>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/012.png" alt="012">
+<figcaption aria-hidden="true">012</figcaption>
+</figure>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/013.png" alt="013">
+<figcaption aria-hidden="true">013</figcaption>
+</figure>
+<figure>
+<img src="/2022/09/24/Notes-on-Vim/014.png" alt="014">
+<figcaption aria-hidden="true">014</figcaption>
+</figure>
+<p>另外, 在 formatted 文件中, 更推荐用替换模式 <code>R</code>
+编辑文件内容, 以免破坏文件可读性(例如 WIEN2k 产生的工程文件).</p>
+<h3 id="using-vim-as-ide">Using Vim As IDE</h3>
+<p>(占坑施工中)</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/notes/" rel="tag"><i class="fa fa-tag"></i> notes</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/08/31/Miscellaneous-Trouble-shooting/" rel="prev" title="Miscellaneous Trouble-shooting">
+                  <i class="fa fa-chevron-left"></i> Miscellaneous Trouble-shooting
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-book"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">姬</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.7/pdfobject.min.js","integrity":"sha256-ph3Dk89VmuTVXG6x/RDzk53SU9LPdAh1tpv0UvnDZ2I="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-rosy.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/2022/09/24/Notes-on-Vim/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false}});</script></body>
+</html>
