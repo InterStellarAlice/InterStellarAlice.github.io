@@ -1,3 +1,4 @@
+http://example.com/2023/07/02/sugon_config/
 http://example.com/2023/08/17/Extensions%20That%20Help%20Maintain%20Mental%20Health/
 http://example.com/2023/07/02/%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC3%E8%AE%B2/
 http://example.com/2023/07/02/%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC2%E8%AE%B2/
@@ -28,3 +29,4 @@ http://example.com/
 http://example.com/tags/notes/
 http://example.com/tags/many-body-physics/
 http://example.com/tags/travelogue/
+http://example.com/tags/hpc/
