@@ -25,30 +25,32 @@
 <meta name="description" content="windows&#x2F;ios&#x2F;android 系统下配置 ssh.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="本地终端连接曙光集群">
-<meta property="og:url" content="http://example.com/2023/07/02/sugon_config/index.html">
+<meta property="og:url" content="http://example.com/2023/12/19/sugon_config/index.html">
 <meta property="og:site_name" content="Inter-Stellar Alice">
 <meta property="og:description" content="windows&#x2F;ios&#x2F;android 系统下配置 ssh.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/sugon_config/11bd17f9e075c232e16ae9839883f76.png">
-<meta property="og:image" content="http://example.com/sugon_config/1702960866025.png">
-<meta property="og:image" content="http://example.com/sugon_config/f6a96a1d9940da495e27515c9a6a6b1.jpg">
-<meta property="og:image" content="http://example.com/sugon_config/495252fe886556e3b9595c001ed4673.jpg">
-<meta property="og:image" content="http://example.com/sugon_config/7cfa606dfeacf378bf114c3ab42780f.jpg">
-<meta property="og:image" content="http://example.com/sugon_config/f54bd01f90f1acec3812ccb01d583ab.jpg">
-<meta property="og:image" content="http://example.com/sugon_config/e34e63816cd845b0e357402b430e7dc-17029770538412.jpg">
-<meta property="article:published_time" content="2023-07-02T12:13:28.000Z">
-<meta property="article:modified_time" content="2023-12-19T09:12:08.000Z">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/11bd17f9e075c232e16ae9839883f76.png">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/1702960866025.png">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/Pasted%20image%2020231219125135.png">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/Pasted%20image%2020231219130259.png">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/f6a96a1d9940da495e27515c9a6a6b1.jpg">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/495252fe886556e3b9595c001ed4673.jpg">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/7cfa606dfeacf378bf114c3ab42780f.jpg">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/f54bd01f90f1acec3812ccb01d583ab.jpg">
+<meta property="og:image" content="http://example.com/2023/12/19/sugon_config/e34e63816cd845b0e357402b430e7dc-17029770538412.jpg">
+<meta property="article:published_time" content="2023-12-19T12:13:28.000Z">
+<meta property="article:modified_time" content="2023-12-19T09:23:06.000Z">
 <meta property="article:author" content="姬">
 <meta property="article:tag" content="hpc">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/sugon_config/11bd17f9e075c232e16ae9839883f76.png">
+<meta name="twitter:image" content="http://example.com/2023/12/19/sugon_config/11bd17f9e075c232e16ae9839883f76.png">
 
 
-<link rel="canonical" href="http://example.com/2023/07/02/sugon_config/">
+<link rel="canonical" href="http://example.com/2023/12/19/sugon_config/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/07/02/sugon_config/","path":"2023/07/02/sugon_config/","title":"本地终端连接曙光集群"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/12/19/sugon_config/","path":"2023/12/19/sugon_config/","title":"本地终端连接曙光集群"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>本地终端连接曙光集群 | Inter-Stellar Alice</title>
@@ -244,7 +246,9 @@ mjx-container[display="true"] + br {
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vscode-remote-ssh-%E9%85%8D%E7%BD%AE%EF%BC%88%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E6%96%B9%E4%BE%BF%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">vscode remote-ssh 配置（文本编辑方便）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MobaXterm-%E9%85%8D%E7%BD%AE-gnuplot-xcrysden-%E7%AD%89%E5%8F%AF%E8%A7%86%E5%8C%96%E7%95%8C%E9%9D%A2%E6%96%B9%E4%BE%BF"><span class="nav-number">2.</span> <span class="nav-text">MobaXterm 配置(gnuplot, xcrysden 等可视化界面方便)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Termius-%E9%85%8D%E7%BD%AE%EF%BC%88ipad-%E5%8F%AF%E7%94%A8%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">Termius 配置（ipad 可用）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Termux-%E9%85%8D%E7%BD%AE%EF%BC%88android-%E5%8F%AF%E7%94%A8%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">Termux 配置（android 可用）</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vscode-remote-ssh-%E9%85%8D%E7%BD%AE%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E6%96%B9%E4%BE%BF"><span class="nav-number">1.</span> <span class="nav-text">vscode remote-ssh
+配置（文本编辑方便）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mobaxterm-%E9%85%8D%E7%BD%AEgnuplot-xcrysden-%E7%AD%89%E5%8F%AF%E8%A7%86%E5%8C%96%E7%95%8C%E9%9D%A2%E6%96%B9%E4%BE%BF"><span class="nav-number">2.</span> <span class="nav-text">MobaXterm
+配置(gnuplot, xcrysden 等可视化界面方便)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#termius-%E9%85%8D%E7%BD%AEipad-%E5%8F%AF%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">Termius 配置（ipad 可用）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#termux-%E9%85%8D%E7%BD%AEandroid-%E5%8F%AF%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">Termux 配置（android 可用）</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -304,7 +308,7 @@ mjx-container[display="true"] + br {
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/02/sugon_config/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/19/sugon_config/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -327,15 +331,9 @@ mjx-container[display="true"] + br {
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2023-07-02 20:13:28" itemprop="dateCreated datePublished" datetime="2023-07-02T20:13:28+08:00">2023-07-02</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-12-19 17:12:08" itemprop="dateModified" datetime="2023-12-19T17:12:08+08:00">2023-12-19</time>
+      <time title="创建时间：2023-12-19 20:13:28 / 修改时间：17:23:06" itemprop="dateCreated datePublished" datetime="2023-12-19T20:13:28+08:00">2023-12-19</time>
     </span>
 
   
@@ -354,8 +352,8 @@ mjx-container[display="true"] + br {
     </span>
     <span class="post-meta-item-text">Waline：</span>
   
-    <a title="waline" href="/2023/07/02/sugon_config/#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="/2023/07/02/sugon_config/" itemprop="commentCount"></span>
+    <a title="waline" href="/2023/12/19/sugon_config/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2023/12/19/sugon_config/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -370,19 +368,67 @@ mjx-container[display="true"] + br {
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="vscode-remote-ssh-配置（文本编辑方便）"><a href="#vscode-remote-ssh-配置（文本编辑方便）" class="headerlink" title="vscode remote-ssh 配置（文本编辑方便）"></a>vscode remote-ssh 配置（文本编辑方便）</h1><p><a target="_blank" rel="noopener" href="https://ac.sugon.com/doc/1.0.6/30000/general-handbook/video/wsl1.html">参考官方文档说明</a> 下载密钥文件，记录主机名（Hosename），端口号（Portname），用户名（Username）和密钥文件所在路径。<br><img src="/sugon_config/11bd17f9e075c232e16ae9839883f76.png" alt="11bd17f9e075c232e16ae9839883f76"><br>在 vscode remote-ssh 插件的配置文件中输入集群信息<br><img src="/sugon_config/1702960866025.png" alt="1702960866025"></p>
+        <h1 id="vscode-remote-ssh-配置文本编辑方便">vscode remote-ssh
+配置（文本编辑方便）</h1>
+<p><a target="_blank" rel="noopener" href="https://ac.sugon.com/doc/1.0.6/30000/general-handbook/video/wsl1.html">参考官方文档说明</a>
+下载密钥文件，记录主机名（Hosename），端口号（Portname），用户名（Username）和密钥文件所在路径。
+<img src="/2023/12/19/sugon_config/11bd17f9e075c232e16ae9839883f76.png" alt="11bd17f9e075c232e16ae9839883f76"> 在 vscode remote-ssh
+插件的配置文件中输入集群信息 <img src="/2023/12/19/sugon_config/1702960866025.png" alt="1702960866025"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Host &lt;alias name&gt;</span><br><span class="line"></span><br><span class="line">    HostName &lt;主机名&gt;</span><br><span class="line"></span><br><span class="line">    User &lt;用户名&gt;</span><br><span class="line"></span><br><span class="line">    Port &lt;端口号&gt;</span><br><span class="line"></span><br><span class="line">    IdentityFile PATH_TO_rsa.txt</span><br></pre></td></tr></table></figure>
-<p>其中 &lt;alias name&gt; 可以自定义，会出现在 ssh 登录列表中，其他信息保持与网页端查到的一致。此时直接远程连接 ssh，窗口仍然要求输入密码，并输出问题：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions for 'PATH_TO_rsa.txt' are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key "PATH_TO_rsa.txt": bad permissions</span><br></pre></td></tr></table></figure>
-<p>如果是 linux 系统，可以直接使用 <code>sudo chmod 600 ~/.ssh/id_rsa</code> 修改密钥文件权限，但 windows 系统下没有对应的命令，需要手动更改权限。<br>右键点击密钥文件-&gt;属性-&gt;安全-&gt;高级，先选择 <code>禁用继承</code> ，然后删除所有主体和所有者不同的权限条目，只保留当前用户的权限，即<br>![Pasted image 20231219125135](sugon_config/Pasted image 20231219125135.png)<br>如果不确定当前用户名，可以在文件所在目录下打开本地终端，输入 <code>echo $USERNAME</code> 查看用户名，将密钥文件的 <code>所有者</code> 和权限条目的 <code>主体</code> 更改为正确的用户名。<br>保存更改并退出属性设置，重新在 vscode 中远程登录节点，不再需要输入密码，登录成功。</p>
-<h1 id="MobaXterm-配置-gnuplot-xcrysden-等可视化界面方便"><a href="#MobaXterm-配置-gnuplot-xcrysden-等可视化界面方便" class="headerlink" title="MobaXterm 配置(gnuplot, xcrysden 等可视化界面方便)"></a>MobaXterm 配置(gnuplot, xcrysden 等可视化界面方便)</h1><p>打开 MobaXterm 窗口，选择 <code>sessions</code> -&gt; <code>new session</code> -&gt; <code>SSH</code> 配置主机名，用户名，端口号，密钥文件<br>![Pasted image 20231219130259](sugon_config/Pasted image 20231219130259.png)<br>配置完成后入口会显示在 <code>User Sessions</code> 列表下，点击可直接登录。</p>
-<h1 id="Termius-配置（ipad-可用）"><a href="#Termius-配置（ipad-可用）" class="headerlink" title="Termius 配置（ipad 可用）"></a>Termius 配置（ipad 可用）</h1><p><code>Hosts</code> -&gt; 右上角加号 -&gt; <code>New Host</code> 输入正确的 Hostname, Port 和 Username，点进 <code>Key</code> 之后在右上角加号选择 <code>Import Key</code>, 导入密钥文件，然后选中刚刚生成的 Key, 完成配置。<br><img src="/sugon_config/f6a96a1d9940da495e27515c9a6a6b1.jpg" alt="f6a96a1d9940da495e27515c9a6a6b1"></p>
-<p><img src="/sugon_config/495252fe886556e3b9595c001ed4673.jpg" alt="495252fe886556e3b9595c001ed4673"></p>
-<p><img src="/sugon_config/7cfa606dfeacf378bf114c3ab42780f.jpg" alt="7cfa606dfeacf378bf114c3ab42780f"></p>
-<h1 id="Termux-配置（android-可用）"><a href="#Termux-配置（android-可用）" class="headerlink" title="Termux 配置（android 可用）"></a>Termux 配置（android 可用）</h1><p>Termux 安装包需在  github  官方仓库下载，下载地址 <a target="_blank" rel="noopener" href="https://github.com/termux">https://github.com/termux</a></p>
-<p>进入终端，执行 <code>pkg upgrade</code> -&gt; <code>pkg install openssh</code><br>( 如果直接安装 openssh 可能出现报错 <code>CANNOT LINK EXECUTABLE "ssh-keygen": library "libcrypto.so.3" not found: needed by main executable</code> ，因此需要先 upgrade)<br>执行 <code>ssh-keygen -t rsa</code> 生成密钥文件，执行过程中的所有选项都回车，使用默认目录，不添加密码。<br><img src="/sugon_config/f54bd01f90f1acec3812ccb01d583ab.jpg" alt="f54bd01f90f1acec3812ccb01d583ab"><br><code>cd</code> 到 <code>id_rsa.pub</code> 所在的文件夹下，打开文件，将内容复制出来。<br>使用其他方式登录超算，在用户目录下打开 <code>~/.ssh/authorized_keys</code> 文件，将复制出来的内容另起一行粘贴到此文件中，保存并退出。（不要删除或修改 <code>authorized_keys</code> 文件中其他内容)<br>在 termux 中执行 <code>ssh -p &lt;port&gt; &lt;username&gt;@&lt;hostname&gt;</code> 登录超算，过程中提示</p>
+<p>其中 &lt;alias name&gt; 可以自定义，会出现在 ssh
+登录列表中，其他信息保持与网页端查到的一致。此时直接远程连接
+ssh，窗口仍然要求输入密码，并输出问题： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions for 'PATH_TO_rsa.txt' are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key "PATH_TO_rsa.txt": bad permissions</span><br></pre></td></tr></table></figure> 如果是 linux
+系统，可以直接使用 <code>sudo chmod 600 ~/.ssh/id_rsa</code>
+修改密钥文件权限，但 windows 系统下没有对应的命令，需要手动更改权限。
+右键点击密钥文件-&gt;属性-&gt;安全-&gt;高级，先选择
+<code>禁用继承</code>
+，然后删除所有主体和所有者不同的权限条目，只保留当前用户的权限，即 <img src="/2023/12/19/sugon_config/Pasted%20image%2020231219125135.png" alt="Pasted image 20231219125135">
+如果不确定当前用户名，可以在文件所在目录下打开本地终端，输入
+<code>echo $USERNAME</code> 查看用户名，将密钥文件的 <code>所有者</code>
+和权限条目的 <code>主体</code> 更改为正确的用户名。
+保存更改并退出属性设置，重新在 vscode
+中远程登录节点，不再需要输入密码，登录成功。</p>
+<h1 id="mobaxterm-配置gnuplot-xcrysden-等可视化界面方便">MobaXterm
+配置(gnuplot, xcrysden 等可视化界面方便)</h1>
+<p>打开 MobaXterm 窗口，选择 <code>sessions</code> -&gt;
+<code>new session</code> -&gt; <code>SSH</code>
+配置主机名，用户名，端口号，密钥文件 <img src="/2023/12/19/sugon_config/Pasted%20image%2020231219130259.png" alt="Pasted image 20231219130259"> 配置完成后入口会显示在
+<code>User Sessions</code> 列表下，点击可直接登录。</p>
+<h1 id="termius-配置ipad-可用">Termius 配置（ipad 可用）</h1>
+<p><code>Hosts</code> -&gt; 右上角加号 -&gt; <code>New Host</code>
+输入正确的 Hostname, Port 和 Username，点进 <code>Key</code>
+之后在右上角加号选择 <code>Import Key</code>,
+导入密钥文件，然后选中刚刚生成的 Key, 完成配置。 <img src="/2023/12/19/sugon_config/f6a96a1d9940da495e27515c9a6a6b1.jpg" alt="f6a96a1d9940da495e27515c9a6a6b1"></p>
+<figure>
+<img src="/2023/12/19/sugon_config/495252fe886556e3b9595c001ed4673.jpg" alt="495252fe886556e3b9595c001ed4673">
+<figcaption aria-hidden="true">495252fe886556e3b9595c001ed4673</figcaption>
+</figure>
+<figure>
+<img src="/2023/12/19/sugon_config/7cfa606dfeacf378bf114c3ab42780f.jpg" alt="7cfa606dfeacf378bf114c3ab42780f">
+<figcaption aria-hidden="true">7cfa606dfeacf378bf114c3ab42780f</figcaption>
+</figure>
+<h1 id="termux-配置android-可用">Termux 配置（android 可用）</h1>
+<p>Termux 安装包需在 github 官方仓库下载，下载地址
+https://github.com/termux</p>
+<p>进入终端，执行 <code>pkg upgrade</code> -&gt;
+<code>pkg install openssh</code> ( 如果直接安装 openssh 可能出现报错
+<code>CANNOT LINK EXECUTABLE "ssh-keygen": library "libcrypto.so.3" not found: needed by main executable</code>
+，因此需要先 upgrade) 执行 <code>ssh-keygen -t rsa</code>
+生成密钥文件，执行过程中的所有选项都回车，使用默认目录，不添加密码。
+<img src="/2023/12/19/sugon_config/f54bd01f90f1acec3812ccb01d583ab.jpg" alt="f54bd01f90f1acec3812ccb01d583ab"> <code>cd</code> 到
+<code>id_rsa.pub</code> 所在的文件夹下，打开文件，将内容复制出来。
+使用其他方式登录超算，在用户目录下打开
+<code>~/.ssh/authorized_keys</code>
+文件，将复制出来的内容另起一行粘贴到此文件中，保存并退出。（不要删除或修改
+<code>authorized_keys</code> 文件中其他内容) 在 termux 中执行
+<code>ssh -p &lt;port&gt; &lt;username&gt;@&lt;hostname&gt;</code>
+登录超算，过程中提示</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Are you shure you want to continue connecting (yes/no/[fingerprint])?</span><br></pre></td></tr></table></figure>
-<p>输入 <code>yes</code> 回车，登录到远程超算。之后每次登录只需要输入 <code>ssh -p &lt;port&gt; &lt;username&gt;@&lt;hostname&gt;</code> 即可。登录成功后显示界面<br><img src="/sugon_config/e34e63816cd845b0e357402b430e7dc-17029770538412.jpg" alt="e34e63816cd845b0e357402b430e7dc"><br><code>termux</code> 放在手机后台会断开连接，需要重新连接 ssh。此方法安全性较低，考虑到材料计算研究中有效文件含量较低，应该没人窃取，可以放心使用。</p>
+<p>输入 <code>yes</code> 回车，登录到远程超算。之后每次登录只需要输入
+<code>ssh -p &lt;port&gt; &lt;username&gt;@&lt;hostname&gt;</code>
+即可。登录成功后显示界面 <img src="/2023/12/19/sugon_config/e34e63816cd845b0e357402b430e7dc-17029770538412.jpg" alt="e34e63816cd845b0e357402b430e7dc"> <code>termux</code>
+放在手机后台会断开连接，需要重新连接
+ssh。此方法安全性较低，考虑到材料计算研究中有效文件含量较低，应该没人窃取，可以放心使用。</p>
 
     </div>
 
@@ -399,14 +445,11 @@ mjx-container[display="true"] + br {
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/09/24/Notes-on-Vim/" rel="prev" title="Notes on Vim">
-                  <i class="fa fa-chevron-left"></i> Notes on Vim
+                <a href="/2023/08/17/Extensions%20That%20Help%20Maintain%20Mental%20Health/" rel="prev" title="Extensions That Help Maintain Mental Health">
+                  <i class="fa fa-chevron-left"></i> Extensions That Help Maintain Mental Health
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/07/02/%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC%E4%BA%94%E8%AE%B2/" rel="next" title="量子多体理论第二章(3)">
-                  量子多体理论第二章(3) <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -475,7 +518,7 @@ mjx-container[display="true"] + br {
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-rosy.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/2023/07/02/sugon_config/"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-rosy.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/2023/12/19/sugon_config/"}</script>
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
 <script>
 document.addEventListener('page:loaded', () => {
