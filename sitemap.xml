@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2023/09/19/Hexo-remote-config-on-ubuntu24/</loc>
+    
+    <lastmod>2024-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2024/01/03/sugon_config/</loc>
     
     <lastmod>2024-01-03</lastmod>
@@ -102,15 +111,6 @@
   
   <url>
     <loc>http://example.com/2023/07/02/%E5%A4%9A%E4%BD%93%E7%90%86%E8%AE%BA-%E7%AC%AC4%E8%AE%B2/</loc>
-    
-    <lastmod>2023-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/07/13/hello-world/</loc>
     
     <lastmod>2023-07-02</lastmod>
     
@@ -276,6 +276,13 @@
   
   <url>
     <loc>http://example.com/tags/hpc/</loc>
+    <lastmod>2024-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/linux/</loc>
     <lastmod>2024-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
