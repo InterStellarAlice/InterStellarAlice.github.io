@@ -28,6 +28,6 @@ http://example.com/tags/index.html
 http://example.com/
 http://example.com/tags/notes/
 http://example.com/tags/many-body-physics/
+http://example.com/tags/linux/
 http://example.com/tags/travelogue/
 http://example.com/tags/hpc/
-http://example.com/tags/linux/
