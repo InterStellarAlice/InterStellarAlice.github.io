@@ -1,3 +1,6 @@
+http://example.com/2026/07/31/Hexo-Blog-Maintenance-Guide/
+http://example.com/About-me/index.html
+http://example.com/2024/09/25/test/
 http://example.com/2023/09/19/Hexo-remote-config-on-ubuntu24/
 http://example.com/2024/01/03/sugon_config/
 http://example.com/2023/08/17/Extensions%20That%20Help%20Maintain%20Mental%20Health/
@@ -31,3 +34,7 @@ http://example.com/tags/many-body-physics/
 http://example.com/tags/linux/
 http://example.com/tags/travelogue/
 http://example.com/tags/hpc/
+http://example.com/tags/hexo/
+http://example.com/tags/github-pages/
+http://example.com/tags/website/
+http://example.com/categories/website-maintenance/

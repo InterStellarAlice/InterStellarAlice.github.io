@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#0F77A4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F77A4" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#0F77A4">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="A project-specific guide to the homepage, themes, bilingual content, new posts, media, local previews, and future maintenance.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + NexT Blog Maintenance Guide">
+<meta property="og:url" content="http://example.com/2026/07/31/Hexo-Blog-Maintenance-Guide/index.html">
+<meta property="og:site_name" content="Yingji Zhang">
+<meta property="og:description" content="A project-specific guide to the homepage, themes, bilingual content, new posts, media, local previews, and future maintenance.">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-07-31T10:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-31T10:00:00.000Z">
+<meta property="article:author" content="姬">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="github-pages">
+<meta property="article:tag" content="website">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2026/07/31/Hexo-Blog-Maintenance-Guide/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/07/31/Hexo-Blog-Maintenance-Guide/","path":"2026/07/31/Hexo-Blog-Maintenance-Guide/","title":"Hexo + NexT Blog Maintenance Guide"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Hexo + NexT Blog Maintenance Guide | Yingji Zhang</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="Yingji Zhang" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yingji Zhang</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/About-me/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#project-map"><span class="nav-number">1.</span> <span class="nav-text">1. Project map</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#safe-local-workflow"><span class="nav-number">2.</span> <span class="nav-text">2. Safe local workflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#formatting-the-homepage"><span class="nav-number">3.</span> <span class="nav-text">3. Formatting the homepage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#site-identity-and-post-ordering"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Site identity and post
+ordering</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#menu-sidebar-and-overall-layout"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 Menu, sidebar, and overall
+layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#control-each-posts-homepage-summary"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 Control each post&#39;s
+homepage summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#changing-the-pictures"><span class="nav-number">4.</span> <span class="nav-text">4. Changing the pictures</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#current-picture-locations"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 Current picture locations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#proposed-durable-picture-setup"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 Proposed durable picture
+setup</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#changing-the-color-theme"><span class="nav-number">5.</span> <span class="nav-text">5. Changing the color theme</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#fast-changes"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 Fast changes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#proposed-custom-palette"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 Proposed custom palette</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#adding-a-new-article"><span class="nav-number">6.</span> <span class="nav-text">6. Adding a new article</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-the-markdown-file"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 Create the Markdown file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#front-matter"><span class="nav-number">6.2.</span> <span class="nav-text">6.2 Front matter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#normal-markdown-body"><span class="nav-number">6.3.</span> <span class="nav-text">6.3 Normal Markdown body</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chinese-and-english-ui-with-separate-markdown-folders"><span class="nav-number">7.</span> <span class="nav-text">7.
+Chinese and English UI with separate Markdown folders</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-the-current-settings-do"><span class="nav-number">7.1.</span> <span class="nav-text">7.1 What the current settings
+do</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#simple-paired-post-organization"><span class="nav-number">7.2.</span> <span class="nav-text">7.2 Simple paired-post
+organization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#proposed-full-two-source-bilingual-site"><span class="nav-number">7.3.</span> <span class="nav-text">7.3 Proposed full
+two-source bilingual site</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#adding-pictures-pdfs-and-mp3-files"><span class="nav-number">8.</span> <span class="nav-text">8. Adding pictures, PDFs,
+and MP3 files</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pictures-owned-by-one-post"><span class="nav-number">8.1.</span> <span class="nav-text">8.1 Pictures owned by one post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pdf-files"><span class="nav-number">8.2.</span> <span class="nav-text">8.2 PDF files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mp3-files"><span class="nav-number">8.3.</span> <span class="nav-text">8.3 MP3 files</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#local-verification-checklist"><span class="nav-number">9.</span> <span class="nav-text">9. Local verification
+checklist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#improvement-backlog-found-during-this-audit"><span class="nav-number">10.</span> <span class="nav-text">10. Improvement
+backlog found during this audit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#official-references"><span class="nav-number">11.</span> <span class="nav-text">11. Official references</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="姬"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">姬</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/07/31/Hexo-Blog-Maintenance-Guide/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="姬">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yingji Zhang">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo + NexT Blog Maintenance Guide
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-31 18:00:00" itemprop="dateCreated datePublished" datetime="2026-07-31T18:00:00+08:00">2026-07-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/website-maintenance/" itemprop="url" rel="index"><span itemprop="name">website maintenance</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description">A project-specific guide to the homepage, themes, bilingual content, new posts, media, local previews, and future maintenance.</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>This is a project-specific maintenance guide for the
+<code>InterStellarAlice.github.io</code> Hexo site. It records how the
+repository works as inspected on 2026-07-31. The examples marked
+<strong>proposed</strong> describe future changes; they have not been
+applied to the current configuration.</p>
+<span id="more"></span>
+<h2 id="project-map">1. Project map</h2>
+<p>The site currently uses Hexo 6.0.0 and the npm-installed NexT 8.9.0
+theme.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Path</th>
+<th>Purpose</th>
+<th>Edit normally?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>_config.yml</code></td>
+<td>Main Hexo settings: site identity, URL, source/output directories,
+permalinks, homepage pagination, theme, and deployment</td>
+<td>Yes, but back it up and change one subject at a time</td>
+</tr>
+<tr class="even">
+<td><code>_config.next.yml</code></td>
+<td>NexT layout, menu, avatar, colors, dark mode, effects, PDF support,
+and other theme settings</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><code>scaffolds/post.md</code></td>
+<td>Template used by <code>hexo new post</code></td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td><code>source/_posts/*.md</code></td>
+<td>Published Markdown posts</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><code>source/_posts/Post-Slug/</code></td>
+<td>Images and other files owned by <code>Post-Slug.md</code></td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td><code>source/pdf/</code></td>
+<td>Site-wide PDF files</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><code>source/lib/pdf/</code></td>
+<td>Existing PDF.js fallback copied without rendering</td>
+<td>Only after checking PDF rendering</td>
+</tr>
+<tr class="even">
+<td><code>source/About-me/index.md</code></td>
+<td>About page</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td><code>source/tags/index.md</code></td>
+<td>Tags index page</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td><code>node_modules/</code></td>
+<td>Installed packages and the installed NexT theme</td>
+<td><strong>No</strong>; reinstalling packages can overwrite edits</td>
+</tr>
+<tr class="odd">
+<td><code>db.json</code></td>
+<td>Hexo cache</td>
+<td>No; <code>hexo clean</code> recreates it</td>
+</tr>
+<tr class="even">
+<td><code>public/</code></td>
+<td>Generated local website</td>
+<td>No; <code>hexo generate</code> recreates it</td>
+</tr>
+<tr class="odd">
+<td><code>.deploy_git/</code></td>
+<td>Hexo deployment cache/repository</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>themes/</code> directory is intentionally almost empty
+because NexT is loaded from <code>node_modules/hexo-theme-next</code>
+through the <code>hexo-theme-next</code> npm package.</p>
+<h2 id="safe-local-workflow">2. Safe local workflow</h2>
+<p>Run commands from the blog root. Prefer the project-local Hexo
+version through <code>npx</code>; a global <code>hexo-cli</code>
+installation and <code>sudo npm</code> are not required.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Install exactly the versions recorded in package-lock.json when needed.</span></span><br><span class="line">npm ci</span><br><span class="line"></span><br><span class="line"><span class="comment"># Delete only generated output and the Hexo cache.</span></span><br><span class="line">npx hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate the static site into public/.</span></span><br><span class="line">npx hexo generate</span><br><span class="line"><span class="comment"># Short alias:</span></span><br><span class="line">npx hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># Preview at http://localhost:4000/.</span></span><br><span class="line">npx hexo server</span><br><span class="line"><span class="comment"># Short alias:</span></span><br><span class="line">npx hexo s</span><br></pre></td></tr></table></figure>
+<p>The generate alias is <code>hexo g</code>, not standalone
+<code>hexo -g</code>. In Hexo, <code>-g</code> is documented as an
+option of the <strong>deploy</strong> command. Use
+<code>npx hexo g</code> for a local-only build.</p>
+<p>Do not run either of these unless publishing is intended:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npx hexo deploy</span><br><span class="line">npx hexo d</span><br></pre></td></tr></table></figure>
+<p>The deployment target is currently the <code>master</code> branch of
+<code>InterStellarAlice/InterStellarAlice.github.io</code>. Generating
+and serving locally do not push anything.</p>
+<h2 id="formatting-the-homepage">3. Formatting the homepage</h2>
+<p>The homepage is assembled from site settings, NexT settings, and each
+post's front matter.</p>
+<h3 id="site-identity-and-post-ordering">3.1 Site identity and post
+ordering</h3>
+<p>Edit these keys in <code>_config.yml</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">Yingji</span> <span class="string">Zhang</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">姬</span></span><br><span class="line"><span class="attr">language:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">en</span></span><br><span class="line"></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>title</code>, <code>subtitle</code>, <code>description</code>,
+<code>keywords</code>, and <code>author</code> provide site metadata.
+NexT can also display the subtitle when
+<code>index_with_subtitle: true</code> is set in
+<code>_config.next.yml</code>.</li>
+<li><code>per_page: 10</code> puts ten posts on each homepage page.</li>
+<li><code>order_by: -date</code> places the newest dated post
+first.</li>
+<li>The current <code>url: http://example.com</code> is only a
+placeholder and should eventually become
+<code>https://interstellaralice.github.io</code>; otherwise canonical,
+Open Graph, feed, and sitemap URLs are wrong.</li>
+</ul>
+<h3 id="menu-sidebar-and-overall-layout">3.2 Menu, sidebar, and overall
+layout</h3>
+<p>Edit <code>_config.next.yml</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/About-me/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line"></span><br><span class="line"><span class="attr">sidebar:</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line">  <span class="attr">display:</span> <span class="string">post</span></span><br><span class="line"></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/avatar.jpg</span></span><br><span class="line">  <span class="attr">rounded:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">rotated:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>The active scheme is <code>Gemini</code>, a card-style two-column
+NexT layout. Available schemes are <code>Muse</code>, <code>Mist</code>,
+<code>Pisces</code>, and <code>Gemini</code>. Menu values use this
+format:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Label: /target/ || Font-Awesome-icon</span><br></pre></td></tr></table></figure>
+<p>When adding a menu page, create its source first. For example, the
+current tags page is <code>source/tags/index.md</code> and requires
+<code>type: tags</code> in its front matter.</p>
+<h3 id="control-each-posts-homepage-summary">3.3 Control each post's
+homepage summary</h3>
+<p>The current NexT settings are:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>Therefore, give every post a short <code>description</code> in front
+matter:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">description:</span> <span class="string">A</span> <span class="string">one-sentence</span> <span class="string">summary</span> <span class="string">shown</span> <span class="string">on</span> <span class="string">the</span> <span class="string">homepage</span> <span class="string">and</span> <span class="string">in</span> <span class="string">metadata.</span></span><br></pre></td></tr></table></figure>
+<p>For a manually chosen cutoff, put this after the introduction:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+<p>Keep headings hierarchical: one article title supplied by front
+matter, then <code>##</code> for main sections and <code>###</code> for
+subsections. NexT builds the sidebar table of contents from those
+headings.</p>
+<h2 id="changing-the-pictures">4. Changing the pictures</h2>
+<h3 id="current-picture-locations">4.1 Current picture locations</h3>
+<p>The current rendered images include:</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Picture</th>
+<th>Current configured path</th>
+<th>Current source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sidebar avatar</td>
+<td><code>images/avatar.jpg</code></td>
+<td><code>node_modules/hexo-theme-next/source/images/avatar.jpg</code></td>
+</tr>
+<tr class="even">
+<td>Page background</td>
+<td><code>/images/canvas.jpg</code></td>
+<td><code>node_modules/hexo-theme-next/source/images/canvas.jpg</code></td>
+</tr>
+<tr class="odd">
+<td>16 px favicon</td>
+<td><code>/images/favicon-16x16-next.png</code></td>
+<td>NexT's package image directory</td>
+</tr>
+<tr class="even">
+<td>32 px favicon</td>
+<td><code>/images/favicon-32x32-next.png</code></td>
+<td>NexT's package image directory</td>
+</tr>
+<tr class="odd">
+<td>Apple touch icon</td>
+<td><code>/images/apple-touch-icon-next.png</code></td>
+<td>NexT's package image directory</td>
+</tr>
+<tr class="even">
+<td>Safari pinned-tab logo</td>
+<td><code>/images/logo.svg</code></td>
+<td>NexT's package image directory</td>
+</tr>
+</tbody>
+</table>
+<p>The background is enabled by a custom file inside the installed
+package:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node_modules/hexo-theme-next/source/css/_custom/styles.styl</span><br></pre></td></tr></table></figure>
+<p>It applies <code>/images/canvas.jpg</code> as a fixed, centered,
+cover-sized body background.</p>
+<p>Replacing files inside <code>node_modules</code> works only
+temporarily. <code>npm ci</code>, <code>npm install</code>, or a NexT
+upgrade can erase those pictures and that CSS.</p>
+<h3 id="proposed-durable-picture-setup">4.2 Proposed durable picture
+setup</h3>
+<p>This is the safer future structure:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">source/</span><br><span class="line">├── images/</span><br><span class="line">│   ├── avatar.jpg</span><br><span class="line">│   ├── canvas.jpg</span><br><span class="line">│   ├── favicon-16x16.png</span><br><span class="line">│   ├── favicon-32x32.png</span><br><span class="line">│   ├── apple-touch-icon.png</span><br><span class="line">│   └── logo.svg</span><br><span class="line">└── _data/</span><br><span class="line">    └── styles.styl</span><br></pre></td></tr></table></figure>
+<p>Files under <code>source/images/</code> are copied to
+<code>public/images/</code> and override same-named theme assets. Then
+point <code>_config.next.yml</code> at root-relative paths:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32.png</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/images/apple-touch-icon.png</span></span><br><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span><br><span class="line"></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/avatar.jpg</span></span><br></pre></td></tr></table></figure>
+<p>Move the background rule into
+<code>source/_data/styles.styl</code>:</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: url(<span class="string">&#x27;/images/canvas.jpg&#x27;</span>) center center / cover no-repeat fixed;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Then activate the existing custom-file hook in
+<code>_config.next.yml</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>Use optimized WebP/JPEG for large backgrounds, PNG only when
+transparency is needed, SVG for simple logos, and meaningful dimensions
+to avoid layout shifts. Keep the original files outside
+<code>public/</code>; <code>public/</code> is disposable.</p>
+<h2 id="changing-the-color-theme">5. Changing the color theme</h2>
+<p>NexT exposes several levels of visual customization in
+<code>_config.next.yml</code>.</p>
+<h3 id="fast-changes">5.1 Fast changes</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Whole layout family: Muse, Mist, Pisces, or Gemini.</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Follow the operating system&#x27;s dark preference when true.</span></span><br><span class="line"><span class="attr">darkmode:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Browser toolbar and NexT theme color.</span></span><br><span class="line"><span class="attr">theme_color:</span></span><br><span class="line">  <span class="attr">light:</span> <span class="string">&#x27;#0F77A4&#x27;</span></span><br><span class="line">  <span class="attr">dark:</span> <span class="string">&#x27;#0F77A4&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Code colors.</span></span><br><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="attr">theme:</span></span><br><span class="line">    <span class="attr">light:</span> <span class="string">default</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">tomorrow-night</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Page-loading indicator.</span></span><br><span class="line"><span class="attr">pace:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">blue</span></span><br><span class="line">  <span class="attr">theme:</span> <span class="string">minimal</span></span><br></pre></td></tr></table></figure>
+<p><code>theme_color</code> is not a complete site palette. It mainly
+feeds the theme/header color. Use NexT variables for link, text,
+background, and sidebar accents.</p>
+<h3 id="proposed-custom-palette">5.2 Proposed custom palette</h3>
+<p>Create <code>source/_data/variables.styl</code>:</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$body</span>-bg-<span class="attribute">color</span>            = <span class="number">#f4f7fb</span></span><br><span class="line"><span class="variable">$body</span>-bg-<span class="attribute">color</span>-dark       = <span class="number">#20242b</span></span><br><span class="line"><span class="variable">$content</span>-bg-<span class="attribute">color</span>         = <span class="number">#ffffff</span></span><br><span class="line"><span class="variable">$content</span>-bg-<span class="attribute">color</span>-dark    = <span class="number">#282d35</span></span><br><span class="line"><span class="variable">$text</span>-<span class="attribute">color</span>               = <span class="number">#273142</span></span><br><span class="line"><span class="variable">$text</span>-<span class="attribute">color</span>-dark          = <span class="number">#d8dee9</span></span><br><span class="line"><span class="variable">$link</span>-<span class="attribute">color</span>               = <span class="number">#0f77a4</span></span><br><span class="line"><span class="variable">$link</span>-hover-<span class="attribute">color</span>         = <span class="number">#d45b45</span></span><br><span class="line"><span class="variable">$selection</span>-bg             = <span class="number">#0f77a4</span></span><br><span class="line"><span class="variable">$sidebar</span>-highlight        = <span class="number">#0f77a4</span></span><br></pre></td></tr></table></figure>
+<p>Activate it without editing the theme package:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="attr">variable:</span> <span class="string">source/_data/variables.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<p>Always inspect both light and dark modes, normal and hover states,
+code blocks, mobile layout, and text contrast before publishing a
+palette.</p>
+<h2 id="adding-a-new-article">6. Adding a new article</h2>
+<h3 id="create-the-markdown-file">6.1 Create the Markdown file</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx hexo new post <span class="string">&quot;My Article Title&quot;</span></span><br></pre></td></tr></table></figure>
+<p>The current settings create:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">source/_posts/My-Article-Title.md</span><br><span class="line">source/_posts/My-Article-Title/</span><br></pre></td></tr></table></figure>
+<p>The second path is the article's asset folder because
+<code>post_asset_folder: true</code> is enabled.</p>
+<p>You can also create the Markdown file manually. Do not edit a
+generated HTML file under <code>public/</code>.</p>
+<h3 id="front-matter">6.2 Front matter</h3>
+<p>Every post starts and ends its YAML front matter with exactly three
+hyphens:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">Article</span> <span class="string">Title</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-07-31 18:00:00</span></span><br><span class="line"><span class="attr">updated:</span> <span class="number">2026-07-31 18:00:00</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">姬</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">notes</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">example</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tutorials</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">A</span> <span class="string">short</span> <span class="string">plain-text</span> <span class="string">summary</span> <span class="string">for</span> <span class="string">the</span> <span class="string">homepage</span> <span class="string">and</span> <span class="string">social</span> <span class="string">metadata.</span></span><br><span class="line"><span class="attr">lang:</span> <span class="string">en</span></span><br><span class="line"><span class="attr">count:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Status in this project</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>title</code></td>
+<td>Required</td>
+<td>Displayed article title</td>
+</tr>
+<tr class="even">
+<td><code>date</code></td>
+<td>Required in practice</td>
+<td>Publication time and current permalink date</td>
+</tr>
+<tr class="odd">
+<td><code>updated</code></td>
+<td>Recommended</td>
+<td>Stable visible update time; otherwise filesystem modification time
+is used</td>
+</tr>
+<tr class="even">
+<td><code>tags</code></td>
+<td>Recommended</td>
+<td>One or more searchable labels</td>
+</tr>
+<tr class="odd">
+<td><code>categories</code></td>
+<td>Optional</td>
+<td>Hierarchical topic grouping</td>
+</tr>
+<tr class="even">
+<td><code>description</code></td>
+<td>Strongly recommended</td>
+<td>Homepage excerpt and metadata</td>
+</tr>
+<tr class="odd">
+<td><code>author</code></td>
+<td>Optional</td>
+<td>Overrides the site author for this post</td>
+</tr>
+<tr class="even">
+<td><code>lang</code></td>
+<td>Recommended for bilingual posts</td>
+<td>Changes NexT's UI strings for this page; use <code>zh-CN</code> or
+<code>en</code></td>
+</tr>
+<tr class="odd">
+<td><code>count</code></td>
+<td>Existing project convention</td>
+<td>Requests post counting where a compatible plugin supports it</td>
+</tr>
+<tr class="even">
+<td><code>mathjax</code></td>
+<td>Use when needed</td>
+<td>Enables or disables formula rendering for the post</td>
+</tr>
+<tr class="odd">
+<td><code>comments</code></td>
+<td>Optional</td>
+<td>Per-post comment override</td>
+</tr>
+<tr class="even">
+<td><code>permalink</code></td>
+<td>Optional</td>
+<td>Gives a post a stable custom URL</td>
+</tr>
+</tbody>
+</table>
+<p>YAML indentation matters. Use spaces, not tabs. Quote a value if it
+contains characters that YAML may interpret, especially <code>:</code>,
+<code>#</code>, <code>&#123;</code>, or <code>[</code>.</p>
+<h3 id="normal-markdown-body">6.3 Normal Markdown body</h3>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Opening paragraph.</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">## First section</span></span><br><span class="line"></span><br><span class="line">Text with <span class="strong">**bold**</span>, <span class="emphasis">*italic*</span>, and a [<span class="string">link</span>](<span class="link">https://example.com</span>).</span><br><span class="line"></span><br><span class="line"><span class="section">### Code example</span></span><br><span class="line"></span><br><span class="line"><span class="code">```bash</span></span><br><span class="line"><span class="code">npx hexo g</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<h2 id="chinese-and-english-ui-with-separate-markdown-folders">7.
+Chinese and English UI with separate Markdown folders</h2>
+<h3 id="what-the-current-settings-do">7.1 What the current settings
+do</h3>
+<p>The project already contains:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">language:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">en</span></span><br><span class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># _config.next.yml</span></span><br><span class="line"><span class="attr">language_switcher:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>This translates NexT's interface labels, such as Home, Tags, dates,
+and “Read more.” It does <strong>not</strong> translate article text and
+does <strong>not</strong> automatically build a second, filtered
+homepage.</p>
+<p>At the time of this audit, the generated homepage's selector points
+to <code>/en/index.html</code>, but that file does not exist. The
+current selector is therefore incomplete on the homepage.</p>
+<h3 id="simple-paired-post-organization">7.2 Simple paired-post
+organization</h3>
+<p>For a small number of translated posts, two folders can live inside
+<code>_posts</code>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">source/_posts/</span><br><span class="line">├── CN/</span><br><span class="line">│   └── site-guide.md</span><br><span class="line">└── EN/</span><br><span class="line">    └── site-guide.md</span><br></pre></td></tr></table></figure>
+<p>The folder name is for humans; Hexo uses front matter to select the
+UI and URL.</p>
+<p>Chinese file:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">网站指南</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-07-31 18:00:00</span></span><br><span class="line"><span class="attr">lang:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">guides/site-guide/</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">中文摘要。</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>English file:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Site</span> <span class="string">Guide</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-07-31 18:00:00</span></span><br><span class="line"><span class="attr">lang:</span> <span class="string">en</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">en/guides/site-guide/</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">English</span> <span class="string">summary.</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>Add explicit cross-links near the top of both posts so navigation
+does not depend on theme behavior:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">中文</span>](<span class="link">/guides/site-guide/</span>) | [<span class="string">English</span>](<span class="link">/en/guides/site-guide/</span>)</span><br></pre></td></tr></table></figure>
+<p>This changes the post UI correctly, but the default index generator
+still mixes both languages on one homepage and does not create
+<code>/en/index.html</code>.</p>
+<h3 id="proposed-full-two-source-bilingual-site">7.3 Proposed full
+two-source bilingual site</h3>
+<p>For independent CN and EN homepages, use two complete source trees
+and two small override configs:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">source/</span><br><span class="line">├── CN/</span><br><span class="line">│   ├── _posts/</span><br><span class="line">│   ├── About-me/index.md</span><br><span class="line">│   ├── tags/index.md</span><br><span class="line">│   ├── images/</span><br><span class="line">│   ├── pdf/</span><br><span class="line">│   └── audio/</span><br><span class="line">└── EN/</span><br><span class="line">    ├── _posts/</span><br><span class="line">    ├── About-me/index.md</span><br><span class="line">    ├── tags/index.md</span><br><span class="line">    ├── images/</span><br><span class="line">    ├── pdf/</span><br><span class="line">    └── audio/</span><br></pre></td></tr></table></figure>
+<p>Proposed <code>_config.cn.yml</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">source_dir:</span> <span class="string">source/CN</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://interstellaralice.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
+<p>Proposed <code>_config.en.yml</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">source_dir:</span> <span class="string">source/EN</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">public/en</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://interstellaralice.github.io/en</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/en/</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br></pre></td></tr></table></figure>
+<p>Generate both into one deployable <code>public/</code> tree. Clean
+only once, before both builds:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npx hexo clean</span><br><span class="line">npx hexo generate --config _config.yml,_config.cn.yml</span><br><span class="line">npx hexo generate --config _config.yml,_config.en.yml</span><br></pre></td></tr></table></figure>
+<p>The later config takes precedence when Hexo merges a comma-separated
+config list. Do not run <code>hexo clean</code> between the two generate
+commands, because that would erase the first language.</p>
+<p>Each build has one UI language, so provide explicit links to the two
+homepages, for example in the menu or a custom header:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="string">中文:</span> <span class="string">https://interstellaralice.github.io/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-language</span></span><br><span class="line">  <span class="attr">English:</span> <span class="string">https://interstellaralice.github.io/en/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-language</span></span><br></pre></td></tr></table></figure>
+<p>This full split is a proposed migration, not the current structure.
+Make it in a source-control branch, move a few test posts first, and
+verify images, tags, archives, feeds, canonical URLs, and language links
+before moving all content.</p>
+<h2 id="adding-pictures-pdfs-and-mp3-files">8. Adding pictures, PDFs,
+and MP3 files</h2>
+<h3 id="pictures-owned-by-one-post">8.1 Pictures owned by one post</h3>
+<p>For <code>source/_posts/My-Article.md</code>, place the files beside
+it in a same-named folder:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">source/_posts/</span><br><span class="line">├── My-Article.md</span><br><span class="line">└── My-Article/</span><br><span class="line">    ├── diagram.png</span><br><span class="line">    └── photo.webp</span><br></pre></td></tr></table></figure>
+<p>The existing posts successfully use this Markdown form:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Diagram description</span>](<span class="link">My-Article/diagram.png</span>)</span><br></pre></td></tr></table></figure>
+<p>Hexo's asset tag is another robust option when
+<code>post_asset_folder</code> is enabled:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img diagram.png &quot;Diagram description&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<p>Use descriptive alt text rather than an empty <code>[]</code>. It
+improves accessibility and gives useful context if the file fails to
+load.</p>
+<p>For a site-wide image, put it under <code>source/images/</code> and
+use a root-relative URL:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Site diagram</span>](<span class="link">/images/site-diagram.png</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="pdf-files">8.2 PDF files</h3>
+<p>The site already enables NexT's PDF tag and uses
+<code>source/pdf/many-body-ch3.pdf</code> like this:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf /pdf/many-body-ch3.pdf %&#125;</span><br></pre></td></tr></table></figure>
+<p>For a new file:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source/pdf/my-paper.pdf</span><br></pre></td></tr></table></figure>
+<p>Embed it and also provide a normal download link:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf /pdf/my-paper.pdf %&#125;</span><br><span class="line"></span><br><span class="line">[Download the PDF](/pdf/my-paper.pdf)</span><br></pre></td></tr></table></figure>
+<p>The download link remains useful when a browser blocks embedded PDFs
+or the PDF.js fallback fails.</p>
+<h3 id="mp3-files">8.3 MP3 files</h3>
+<p>There is no dedicated audio plugin in the current dependencies. A
+normal HTML5 audio element works in Markdown.</p>
+<p>Put the file here:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source/audio/example.mp3</span><br></pre></td></tr></table></figure>
+<p>Then add:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span> <span class="attr">preload</span>=<span class="string">&quot;metadata&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;/audio/example.mp3&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span></span><br><span class="line">  Your browser does not support HTML5 audio.</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/audio/example.mp3&quot;</span> <span class="attr">download</span>&gt;</span>Download the MP3<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Use lowercase file extensions and simple ASCII filenames when
+possible. Compress large media before committing it. GitHub Pages has
+repository, deployment, and bandwidth constraints, so very large audio
+or PDF collections are better stored in an external object store with
+stable HTTPS links.</p>
+<h2 id="local-verification-checklist">9. Local verification
+checklist</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Rebuild from a clean cache.</span></span><br><span class="line">npx hexo clean</span><br><span class="line">npx hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># Serve the generated result.</span></span><br><span class="line">npx hexo s</span><br></pre></td></tr></table></figure>
+<p>Check the following before any deployment:</p>
+<ol type="1">
+<li>The new post appears first or at the expected date position on the
+homepage.</li>
+<li>The title, description, tags, category, created date, and updated
+date are correct.</li>
+<li>The table of contents matches the heading hierarchy.</li>
+<li>Every local image loads and its browser URL points to the expected
+post or global asset path.</li>
+<li>PDFs render and have a working download link.</li>
+<li>MP3 playback, seeking, and download work.</li>
+<li>Both light and dark modes remain readable.</li>
+<li>Mobile width does not create horizontal scrolling.</li>
+<li>CN and EN links lead to files that actually exist.</li>
+<li>Browser developer tools show no missing local CSS, JavaScript,
+fonts, or media.</li>
+</ol>
+<p><code>Ctrl+C</code> stops the local server. Running
+<code>generate</code> or <code>server</code> does not deploy.</p>
+<h2 id="improvement-backlog-found-during-this-audit">10. Improvement
+backlog found during this audit</h2>
+<p>No items in this section were changed while creating this guide.</p>
+<table>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Priority</th>
+<th>Finding</th>
+<th>Recommended future action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High</td>
+<td><code>_config.yml</code> still uses
+<code>url: http://example.com</code>; generated social metadata already
+contains that hostname</td>
+<td>Set the production URL and verify <code>root</code>, feed, sitemap,
+Open Graph, and canonical links</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>The blog root is not currently a Git work tree; only
+<code>.deploy_git/</code> contains a <code>.git</code> directory</td>
+<td>Back up the folder, initialize or restore the source repository, and
+version Markdown/configuration separately from generated deployment
+output</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td>Background CSS, <code>canvas.jpg</code>, and <code>avatar.jpg</code>
+are inside <code>node_modules/hexo-theme-next</code></td>
+<td>Move durable assets to <code>source/images/</code> and CSS to
+<code>source/_data/</code>; use <code>custom_file_path</code></td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td><code>npm audit --omit=dev</code> reported 61 dependency
+vulnerabilities on 2026-07-31, including 8 critical and 34 high
+findings</td>
+<td>Upgrade in a separate branch and test generation/rendering; do
+<strong>not</strong> run <code>npm audit fix --force</code> blindly</td>
+</tr>
+<tr class="odd">
+<td>High</td>
+<td>Hexo is 6.0.0 while npm reported 8.1.2; NexT is 8.9.0 while npm
+reported 8.28.0</td>
+<td>Stage upgrades and read migration notes. The installed Node 18.19.1
+cannot run Hexo 8.1.2, which requires Node 20.19 or newer</td>
+</tr>
+<tr class="even">
+<td>High</td>
+<td>The CN/EN homepage switcher links to missing
+<code>/en/index.html</code></td>
+<td>Choose paired-post links for a small bilingual area or implement and
+test the two-source build described above</td>
+</tr>
+<tr class="odd">
+<td>Medium</td>
+<td><code>hexo-asset-image</code> is an old Git/SSH dependency and pulls
+an old vulnerable HTML parser</td>
+<td>After the renderer upgrade, test Hexo's maintained post-asset
+handling and remove the plugin only when all old image URLs still
+render</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td>Both <code>hexo-math</code> and <code>hexo-filter-mathjax</code> are
+installed, alongside the Pandoc renderer</td>
+<td>Decide on one documented math pipeline after testing representative
+formula-heavy posts</td>
+</tr>
+<tr class="odd">
+<td>Medium</td>
+<td><code>db.json</code> is about 89 MiB and <code>source/lib/</code> is
+about 54 MiB with 499 PDF.js files</td>
+<td>Run <code>hexo clean</code> when cache behavior is suspicious; later
+audit whether only the production PDF.js files need to be shipped</td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td>NexT cache is configured on, but NexT 8.9 disables it when
+<code>language_switcher</code> is enabled</td>
+<td>Re-evaluate cache after the multilingual design is fixed, then keep
+only effective settings</td>
+</tr>
+<tr class="odd">
+<td>Low</td>
+<td><code>scaffolds/post.md</code> contains only title, date, and
+tags</td>
+<td>Later extend the scaffold with <code>updated</code>,
+<code>description</code>, <code>categories</code>, <code>lang</code>,
+and <code>mathjax</code> fields</td>
+</tr>
+<tr class="even">
+<td>Low</td>
+<td><code>config.txt</code>, empty <code>_config.landscape.yml</code>,
+and several old/placeholder settings can drift from the active
+configuration</td>
+<td>Compare and label/archive them after source control and backups are
+in place</td>
+</tr>
+<tr class="odd">
+<td>Low</td>
+<td>Package versions and the supported Node version are not documented
+in <code>package.json</code></td>
+<td>Add an <code>engines</code> field and a short maintenance README
+after choosing the upgraded toolchain</td>
+</tr>
+</tbody>
+</table>
+<p>For a dependency upgrade, first save the current site and test
+representative content: a Chinese math-heavy article, an English
+article, a post with many images, the embedded PDF post, the About page,
+tags, archives, and the Live2D widget. Keep the old lockfile until the
+new build is visually verified.</p>
+<h2 id="official-references">11. Official references</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration">Hexo
+configuration</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/writing">Hexo writing</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/asset-folders">Hexo asset
+folders</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/tag-plugins">Hexo tag plugins and post
+assets</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/internationalization">Hexo
+internationalization</a></li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/docs/commands">Hexo commands</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/theme-settings/">NexT theme
+settings</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/theme-settings/internationalization">NexT
+internationalization</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/advanced-settings/custom-files">NexT
+custom files</a></li>
+</ul>
+<p>The safest habit is simple: edit source and configuration, generate
+locally, inspect the result, and deploy only as a separate deliberate
+action.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+              <a href="/tags/github-pages/" rel="tag"><i class="fa fa-tag"></i> github-pages</a>
+              <a href="/tags/website/" rel="tag"><i class="fa fa-tag"></i> website</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/09/25/test/" rel="prev" title="test">
+                  <i class="fa fa-chevron-left"></i> test
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>简体中文</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="选择语言">
+      
+        <option value="zh-CN" data-href="/2026/07/31/Hexo-Blog-Maintenance-Guide/" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/2026/07/31/Hexo-Blog-Maintenance-Guide/" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-book"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">姬</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.7/pdfobject.min.js","integrity":"sha256-ph3Dk89VmuTVXG6x/RDzk53SU9LPdAh1tpv0UvnDZ2I="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false}});</script></body>
+</html>
